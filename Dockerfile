@@ -7,6 +7,7 @@ RUN apt-get update -qq -y && \
     apt-get install -qq -y socat && \
     apt-get clean
 
-EXPOSE 4242
+EXPOSE 1 2 3 4 5
+
 ENTRYPOINT ["socat"]
 CMD ["-h"]
